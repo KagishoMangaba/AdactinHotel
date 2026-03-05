@@ -1,0 +1,23 @@
+## Defect ID: DEF-002
+
+- Defect Type: Requirements / Static Defect
+- Phase Found: Static Review — Requirements Phase
+- Module: Hotel Search
+- Summary: Hotels and hotel types are not defined as valid requirements
+- Description:
+- The requirements specification does not define a list of accepted hotels or hotel types. There are no rules or constraints documented around what values are valid, mandatory, or expected in these fields.
+
+## Impact:
+
+- test cases cannot be designed for hotel and hotel type input validation
+- Developers have no specification to implement input constraints against
+- The system may accept any value including invalid or empty entries with no basis for what is correct
+
+Expected:
+ - Requirements should clearly define accepted hotel names, hotel types, allowed values, and any validation rules that apply to these fields
+Actual:
+ -  No such definition exists in the requirements documentation
+Severity: Major
+Priority: High
+Phase: Requirements
+Status: Open
